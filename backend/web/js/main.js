@@ -1,0 +1,9 @@
+$(function(){
+	$('#tambahTanggungan').on('click',function(){
+        $('#tanggungan').clone().appendTo($('#tanggunganTambahan'));
+    });
+    $('.modalUpdateTanggungan').click(function(){
+        $('#modal').modal('show').find('#modalContent')
+        	.load($(this).attr('value'));
+    });
+});
